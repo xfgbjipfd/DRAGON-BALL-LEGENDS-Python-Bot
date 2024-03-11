@@ -862,7 +862,7 @@ class API(object):
 		guid=self.codedbots.getuuid(guid)
 		key=self.codedbots.getuuid(key)
 		self.log('guid: %s key: %s'%(hexstring(guid),hexstring(key)))
-		self.RequestLoginRequest(_guid=base64.b64encode(guid).decode(),_key=base64.b64encode(key).decode(),_apiVersion=274,_regionId=self._regionId,_languageId=self._languageId)
+		self.RequestLoginRequest(_guid=base64.b64encode(guid).decode(),_key=base64.b64encode(key).decode(),_apiVersion=275,_regionId=self._regionId,_languageId=self._languageId)
 		self.log('_token: %s'%(hexstring(base64.b64decode(self._token))))
 		self.HelloRequest(_agentToken=self._token)
 		self.LoginUserRequest(_romType=self._romType,_platformId=self._platformId,_platformUserId='00000000-0000-0000-0000-000000000000',_countryCode='DE',_currencyCode='EUR',_adId='00000000-0000-0000-0000-000000000000')
